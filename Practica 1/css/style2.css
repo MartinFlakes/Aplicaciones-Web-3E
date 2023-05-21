@@ -1,0 +1,92 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} Permite eliminar los bordes originales de toda web*/
+body{
+    background-color: aquamarine;
+}
+.blackheader{
+    background-color: black;
+    height: 250px;
+    width: 750px;
+    display: flex;
+}
+
+.banner{
+    background-color: white;
+    height: 210px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: solid rgb(103, 157, 238) 10px;
+    border-right: solid rgb(103, 157, 238) 5px;
+    display: flex;
+}
+.center {
+    text-align: center;
+    margin: auto;
+    /* border: 3px solid green; Muestra un borde al rededor del texto */
+  }
+
+.logo{
+    background-color: white;
+    height: 210px;
+    width: 210px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-top: solid rgb(103, 157, 238) 10px;
+    border-bottom: solid rgb(103, 157, 238) 10px;
+    border-right: solid rgb(103, 157, 238) 5px;
+    border-left: solid rgb(103, 157, 238) 5px;
+    display: flex;
+}
+
+.navgreen{
+    background-color: rgb(88, 192, 88);
+    height: 50px;
+    width: 735px;
+    border-left: solid black 5px;
+    border-right: solid black 10px;
+    display: flex;
+}
+
+main{
+    background-color: gray;
+    border: solid black 10px;
+    width: 730px;
+    height: 400px;
+    display: flex;
+}
+
+article{
+    display: flex;
+    background-color: white;
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border: solid yellow 2px;
+}
+
+aside{
+    display: flex;
+    background-color: white;
+    width: 266px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border: solid yellow 2px;
+}
+
+footer{
+    background-color: rgb(255, 196, 0);
+    height: 50px;
+    width: 730px;
+    border: solid black 10px;
+    border-top: 0px;
+}

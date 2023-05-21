@@ -1,0 +1,112 @@
+body{
+    background-color: orange;
+}
+.center{
+    margin: auto;
+}
+nav{
+    background-color: rgb(88, 192, 88);
+    width: 1000px;
+    height: 100px;
+    border: solid black 10px;
+    display: flex;
+}
+
+.boxes{
+    /* background-color: white; */
+    display: flex;
+    width: 920px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.box{
+    background-color: white;
+    display: flex;
+    width: 162px;
+    border: solid blue 1px;
+    margin: 10px;
+}
+
+header{
+    background-color: rgb(36, 136, 194);
+    width: 1000px;
+    height: 300px;
+    border: solid black 10px;
+    display: flex;
+}
+
+.banner{
+    background-color: white;
+    width: 800px;
+    height: 290px;
+    border: solid black 1px;
+    margin-top: 7px;
+    margin-left: 25px;
+    display: flex;
+}
+
+.vertical
+{
+    width: 155px;
+    height: 100%;
+    margin-left: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.log{
+    display: flex;
+    background-color: white;
+    border: solid black 1px;
+    height: 30%;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.form{
+    display: flex;
+    background-color: white;
+    border: solid black 1px;
+    height: 30%;
+    width: 100%;
+    margin-top: 14px;
+    margin-bottom: 1px;
+}
+
+
+main{
+    background-color: gray;
+    width: 1000px;
+    height: 500px;
+    border: solid black 10px;
+    display: flex;
+}
+
+aside{
+    width: 25%;
+    background-color: white;
+    border: solid yellow 1px;
+    height: 478px;
+    display: flex;
+    margin: 1%;
+}
+
+article{
+    width: 500px;
+    background-color: white;
+    border: solid yellow 1px;
+    height: 478px;
+    display: flex;
+    margin: 1%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer{
+    background-color: rgb(255, 208, 80);
+    width: 1000px;
+    height: 50px;
+    border: solid black 10px;
+    display: flex;
+}
