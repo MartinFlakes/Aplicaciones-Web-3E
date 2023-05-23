@@ -1,0 +1,27 @@
+
+main{
+    border:3 px;
+    width: 800px;
+    height: 800px; 
+    background-color: rgb(228, 199, 34);
+    margin:auto;
+    text-align: center;
+    border: solid black 20px;
+}
+.mapa{
+    margin-top: 20px;
+}
+h1{
+    padding: 10px; 
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+p{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;  
+}
+form{
+    color: white;
+}
