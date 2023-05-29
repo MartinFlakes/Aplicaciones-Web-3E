@@ -52,15 +52,12 @@ input[type="search"]{
     border-radius: 10px;
 }
 button{
-    width: 60%;
+    height: 70%;
+    width: 50%;
     display: flex;
-    gap: 20%;
     margin-top: 5vh;
-}
-button > *{
+    justify-content: center;
     font-size: 2em;
-    height: 3em;
-    width: 100%;
     background-color: white;
     box-shadow: 10px 10px black;
 }
@@ -82,4 +79,10 @@ p{
     padding-right: 50px;
     border-left: solid black 1px;
     border-right: solid black 1px;
+}
+
+.botones{
+    display: flex;
+    width: 80%;
+    gap: 10%;
 }
