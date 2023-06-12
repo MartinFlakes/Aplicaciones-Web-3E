@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+</head>
+
+<body>
+    <header>
+        <p id="p1">Hola Mundo</p>
+        <h1 id="titulo">Encabezado Viejo</h1>
+    </header>
+    <nav class="barra">barra</nav>
+    <main>
+        <p class="intro">estos son ejemplos</p>
+        <p class="intro">estos son ejemplos</p>
+        <p class="intro">estos son ejemplos</p>
+        <ul>
+            <li>Este es un elemento de la lista</li>
+            <li>Este es un elemento de la lista</li>
+            <li>Este es un elemento de la lista</li>
+            <li>Este es un elemento de la lista</li>
+            <li>Este es un elemento de la lista</li>
+        </ul>
+    </main>
+    <form action="#" method="get" id="form1" onsubmit="return validarFormulario()">
+        <label for="test">Entrada</label>
+        <input type="text" id="entrada" name="entrada" placeholder="No dejar vacio">
+        <input type="submit" value="ENVIAR" id="btn">
+    </form>
+    <form action="#" method="get" id="form2" onsubmit="return validarNumero()">
+        <label for="test">Numero</label>
+        <input type="text" id="numero" name="numero" placeholder="Solo números del 1 al 10">
+        <input type="submit" value="ENVIAR" id="btnnum">
+    </form>
+    <h2 id="demo"></h2>
+    <div id="imagendiv" onclick="cambiarImagen()">
+        <img id="imagen" src="https://pbs.twimg.com/media/FyaBj2LXsAA3oDQ?format=png&name=small" alt="">
+    </div>
+    <p id="hora">La hora es</p>
+    <!-- <form action="#" method="get" id="form1">
+        <label for="testtext">Test Alerta si el input está vacio</label><br>
+        <input type="text" name="testtext" id="testtext" placeholder="Deja vacio para activar la Alerta">
+        <input type="submit" value="ENVIAR" id="btnSubmit">
+    </form> 
+    <form action="#" method="get" id="form2">
+        <label for="testtext2">Test X &gt; 0 && x &lt; 10]</label> <br>
+        <input type="text" name="testtext2" id="testtext2" placeholder="Inserta un numero del 1 al 10">
+        <input type="submit" value="Comprobar" id="btnSubmit2">
+    </form> -->
+</body>
+
+<script>
+    //Modifica el contenido de un contenedor
+    document.getElementById("p1").innerHTML="¡Nuevo Texto!"
+    //Encuentra elementos por id, asignadonle una variable
+    const elemento = document.getElementById("titulo");
+    elemento.innerHTML="Nuevo Encabezado";
+    //Encuentra elementos por su nombre de etiqueta
+    const main = document.getElementsByTagName("main");
+    const p = document.getElementsByTagName("p");
+    //Impresión en consola de las variables
+    console.log(main);
+    console.log(p);
+    //Encuentra elementos por nombre de clase
+    const clase = document.getElementsByClassName("barra");
+    console.log(clase);
+    //DEvuelve la lista de todos los elementos P con class intro
+    const ps = document.querySelectorAll("p.intro");
+    //Encuentra elementos de una lsita
+    const listItems = document.querySelectorAll("ul > li");
+    console.log(listItems)
+    //Encuentra e imprime en consola el elemento h1
+    const h1element = document.querySelector("h1");
+    console.log(h1element);
+    //Encuentra la clase lista por su tipo de contenedor
+    const list = document.querySelector("ul");
+    console.log(list);
+    //Recorrer una lista con forEach() para iterar e imprimir cada elemento
+    const listaElementos = document.querySelectorAll("ul > li");
+    listaElementos.forEach((item) => {
+    console.log(item);
+    });
+    //Uso de style para cambiar estilos en linea
+    const h1 = document.querySelector("h1");
+    h1.style.color = "blue";
+    //Encuentra un elemento de formulario por su id, en este caso id="frm1", y alamacena todos los valores de los elementos
+    /*const form = document.forms["form1"];
+    let texto = "";
+    for (let index = 0; index < form.length; index++) {
+        texto += form.elements[index].value + "<br>";
+        
+    }
+    document.getElementById("form1").innerHTML = texto;
+    console.log(form);*/
+    //Crea una nueva lista apartir de metodos y propiedades
+    let lista = document.createElement("ul");
+    document.body.appendChild(lista);
+    let elemento1 = document.createElement("li");
+    elemento1.textContent = "Flor";
+    lista.appendChild(elemento1);
+    let elemento2 = document.createElement("li");
+    elemento2.textContent = "Jaguar";
+    lista.appendChild(elemento2);
+    //Crea un botón en el documento html, para accionar un alertar con un click, por su ID
+    const actbutton = document.getElementById("btn");
+    actbutton.addEventListener("click", () => {
+        alert("Gracias por dar Click");
+    })
+    //Comprueba que un formulario no se encuentre vacio a la hora de ser enviado
+    function validarFormulario(){
+        let x = document.forms["form1"]["entrada"].value;
+        if (x === "") {
+            alert("Se debe completar el nombre")
+            return false;
+        }
+    }
+    //Valida la entrada númerica validando si está en un rango del 1 al 10 y sustituye un elemento por un texto según corresponda el caso
+    function validarNumero(){
+        let x = document.getElementById("numero").value;
+        let texto;
+        if(isNaN(x) ||x < 1 || x > 10){
+            texto = "Entrada no válida";
+        }
+        else{
+            texto = "Entrada correcta";
+        }
+        document.getElementById("demo").innerHTML = texto;
+        return false;
+    }
+    validarNumero();
+    //Cambia el valor de un atributo src de un elemento img
+    function cambiarImagen(){
+        document.getElementById("imagen").src = "https://pbs.twimg.com/media/FyaBky3XoAApU5-?format=png&name=small";
+    }
+    //Inserta la hora actual a una etiqueta según su id
+    document.getElementById("hora").innerHTML = "Fecha: "+Date();
+</script>
+
+
+<style>
+
+</style>
+
+</html>
