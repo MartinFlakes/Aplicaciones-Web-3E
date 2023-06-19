@@ -1,9 +1,11 @@
+//Initial References
 let movieNameRef = document.getElementById("movie-name");
 
 let searchBtn = document.getElementById("search-btn");
 
 let result = document.getElementById("result");
 
+//Function to fetch data from API
 let getMovie = () => {
   let movieName = movieNameRef.value;
 
@@ -11,10 +13,11 @@ let getMovie = () => {
 
   if (movieName.length <= 0) {
 	result.innerHTML = `<h3 class="msg">Please Enter A Movie Name</h3>`;
-  } else {
+  } 
+  //If input field is NOT empty
+  else {
 	fetch(url)
 	  .then((resp) => resp.json())
-
 	  .then((data) => {
 		if (data.Response == "True") {
 		  result.innerHTML = `<div class="info">
