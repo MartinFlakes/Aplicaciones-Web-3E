@@ -1,0 +1,36 @@
+
+$cafe: #382404;
+$dorado: #cfa028;
+
+body{
+    background-image: url(../img/daftpunk.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+};
+
+article{
+    backdrop-filter: blur(10px);
+    border: solid #747f99 5px;
+    border-radius: 15px;
+    margin-top: 1%;
+}
+
+h2, h3{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+$theme-colors:(
+    "cafe": $cafe,
+    "dorado": $dorado,
+);
+
+.carousel-item{
+    width: 100vh;
+    height: 60vh;
+    object-fit: cover;
+};
+
+@import "../node_modules/bootstrap/scss/bootstrap";
