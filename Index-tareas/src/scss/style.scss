@@ -1,6 +1,6 @@
 
 $cafe: #382404;
-$dorado: #cfa028;
+$verde: #005C49;
 
 body{
     background-image: url(../img/daftpunk.gif);
@@ -14,7 +14,8 @@ article{
     backdrop-filter: blur(10px);
     border: solid #747f99 5px;
     border-radius: 15px;
-    margin-top: 1%;
+    margin-top: 3%;
+    padding: 0%;
 }
 
 h2, h3{
@@ -24,7 +25,7 @@ h2, h3{
 
 $theme-colors:(
     "cafe": $cafe,
-    "dorado": $dorado,
+    "verde": $verde,
 );
 
 .carousel-item{
@@ -32,5 +33,9 @@ $theme-colors:(
     height: 60vh;
     object-fit: cover;
 };
+
+.card{
+    margin-top: 5%;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
