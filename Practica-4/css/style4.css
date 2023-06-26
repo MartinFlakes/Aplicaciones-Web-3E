@@ -5,7 +5,7 @@
 }
 body{
     display: flex;
-    background-color: orange;
+    background-color: rgb(230, 130, 37);
 }
 main{
     margin: auto;
@@ -21,13 +21,32 @@ article{
     width: 18%;
     text-align: center;
     border-radius: 10px;
+    border: solid black;
+    margin: auto;
+    align-self: center;
+    margin-bottom: 1%;
 }
+
+#pokeboton{
+    background-color: rgb(228, 213, 82);
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+    border-radius: 10px;
+    align-items: center;
+    margin: auto;
+    align-self: center;
+}
+
 img{
     height: 70%;
     width: auto;
 }
 h3{
+    background-color: rgb(228, 213, 82);
     color: rgb(48, 91, 207);
+    border: solid black;
+    border-radius: 10px;
 }
 p{
     color:white;
