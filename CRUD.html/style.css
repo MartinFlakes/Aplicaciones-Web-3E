@@ -1,0 +1,33 @@
+body{
+    margin: 0 50px;
+}
+.container{
+    display: flex;
+    gap:50px;
+}
+#post{
+    width: 400px;
+}
+
+#post div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.options{
+    display: flex;
+    gap: 25px;
+}
+
+i{
+    cursor: pointer;
+}
+
+#msg{
+    color: red;
+}
+
+#post p {
+    word-wrap: break-word;
+    width: 100%;
+}
