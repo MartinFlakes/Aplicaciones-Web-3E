@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,500&display=swap');
+body{
+    background-color: #fff5d6;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #613db7, #613db7 1px, #fff5d6 1px, #fff5d6);
+    font-family: 'REM', sans-serif;
+}
+body, .comentarios{
+    display: grid;
+    place-items: center;
+}
+
+h1{
+    margin-bottom: 1%;
+}
+
+/* Add section */
+.text{
+    padding-left: 20%;
+}
+
+.open{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    place-items: center;
+    border: 2px solid #000;
+    border-radius: 120px;
+}
+
+.button_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    margin-left: 60%;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.add {
+    width: 100%;
+    height: 100%;
+    background-color: #BDBDBD;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.add:hover{
+    background-color: gray;
+}
+/* List section */
+.comentarios{
+    margin-top: 5.4%;
+}
+
+/* form modal */
+textarea{
+    resize: none;
+}
+
+.buttons{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px;
+    gap: 8px;
+}
+
+.delete{
+    height: 40px;
+    background-color: rgb(204, 77, 77);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'REM', sans-serif;
+    
+}
+
+.delete:hover{
+    background-color: #751010;
+    color: white;
+}

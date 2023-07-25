@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Social</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="Bg">
+
+    <h1>Listado de Videojuegos</h1>
+    <!-- Inicio de la ventana modal -->
+    <dialog id="modal">
+        <div class="form_container">
+            <form id="form_modal">
+                <p>Nombre del videojuego</p>
+                <input type="text" id="game">
+                <p>Fecha de lanzamiento</p>
+                <input type="date" name="" id="dates">
+                <p>Descripción o sinopsis</p>
+                    <textarea id="descripcion" cols="30" rows="10"></textarea>
+                <div class="buttons">
+                    <button type="submit">Agregar</button>
+                    <button id="modal-close" type="reset" onclick="modal_close(this)">Borrar</button>
+                </div>
+            </form>
+        </div>   
+    </dialog>
+    <!-- Content -->
+    <div class="container">
+        <div class="open">
+            <p class="text">Agregar nuevo videojuego</p>
+            <button id="modal-open" class="button_more" onclick="modal_open(this)">    
+                <img class="add" src="https://cdn-icons-png.flaticon.com/512/117/117885.png" alt="add">
+            </button>
+        </div>
+
+       <div class="comentarios">
+        <h3>Lista de VideoJuegos</h3>
+
+        <form id="post">
+            <button class="delete" type="submit" onclick="deleteAll()">Eliminar todos los comentarios</button>
+        </form> 
+       </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
